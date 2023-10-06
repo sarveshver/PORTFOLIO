@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%  static 'home.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="custom-cursor"></div>
+<form  method="post">
+    <div id="main-p">
+        <div id="hero">
+            <nav>
+                <ul class="nav-links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </nav>
+            
+                
+        
+            </div>
+            <section id="home">
+            <div id="heading">
+                <h1 class="port">PORTFOLIO</h1>
+                <div class="blocktext">
+                <h1 id="second">welcome to my portal </h1> 
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+        <section id="about">
+        <div id="main">
+        <div id="top">
+            <h1 id="top-h">ABOUT</h1>
+        </div>
+        <div id="center">
+            <div class="content">
+                <h5 id="h5">hey;</h5></br>
+                <h2>"I am a curious and adaptable individual who loves taking up new challenges. I am enthusiastic about exploring the intersections of design and technology. During my educational journey, I discovered my passion for UI/UX design and coding, which led me to pursue a career in this dynamic field."</h2>
+            </div>
+        </div>
+        <div id="bottom">
+            <h1 id="bottom-h">ABOUT</h1>
+        </div>
+
+        
+    </div>
+    
+
+</div>
+</div>
+</section>
+<section id="skills">
+<div class="skills">
+    <p>what i am good at </p>
+</div>
+<div class="logos">
+    <div class="logos-slides">
+        
+        <img src="{% static 'img/icons8-html-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-figma-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-iot-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-python-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-css-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-machine-learning-100.png' %}" alt="Example Image">
+        
+        <img src="{% static 'img/icons8-google-sketchup-26.png' %}" alt="Example Image">
+    </div>
+    <div class="logos-slides">
+        <img src="{% static 'img/icons8-html-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-figma-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-iot-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-python-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-css-100.png' %}" alt="Example Image">
+        <img src="{% static 'img/icons8-machine-learning-100.png' %}" alt="Example Image">
+        
+        <img src="{% static 'img/icons8-google-sketchup-26.png' %}" alt="Example Image">
+    </div>
+</div>
+<div class="projects">
+    <div id="prop">
+        <h1>  SOME OF MY </h1>
+        <h2>works</h2>
+    </div>
+    <div class="pro1">
+        <h1> 01</h1>
+        <h2> MACHINE LEARNING</h2>
+        <h3> Predicting phishing website using random forest algorithm and k neirest neibhor </h3>
+        
+    </div>
+    <div class="pro2">
+        <h1> 02</h1>
+        <h2> WEB DEVELOPMENT</h2>
+        <h3> Created a simple website using HTML and CSS for front-end design. Used Python Django as the
+            back-end framework for data storage and login registation things .
+            </h3>
+    </div>
+    <div class="pro3">
+        <h1> 03</h1>
+        <h2> IOT AUTOMACTION</h2>
+        <h3> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore aperiam magni repudiandae, dicta facere impedit veniam, ratione incidunt corrupti libero rem earum quam beatae. Corporis.</h3>
+    </div>
+    <div class="pro4">
+        <h1> 04</h1>
+        <h2> IOT AUTOMACTION</h2>
+        <h3> Build a home automation to control our home electronic devices using esp-32 (rower)
+        </h3>
+    </div>
+</section>
+<section id="contact">
+<div class="contactus">
+     <h1> say hello.</h1>
+     <h5>feel free too say anything happy to see your text here </h5>
+    
+     
+     
+    
+    {% csrf_token %}
+    {{form.as_p}}
+    <input class="btn" type="submit" value="sudmit">   
+    
+</form>
+
+</div>
+</section>
+<div class="footer">
+    <p>Contact us at <a href="sarveshver77@.com">sarveshver77@.com</a></p>
+    
+   
+    
+</div>
+
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="{% static 'home.js' %}"></script>   
+
+</div>
+    
+</div>
+</div>
+</section>
+
+</body>
+</html>
